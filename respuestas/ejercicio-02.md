@@ -5,7 +5,7 @@
 | Dato | Valor |
 |---|---|
 | Nombre | `inventory-service` |
-| Dirección IP | La informada por `docker inspect` en `NetworkSettings` |
+| Dirección IP | 172.18.0.2 |
 | Red | `ecommerce-network` |
 | Estado | `running` |
 

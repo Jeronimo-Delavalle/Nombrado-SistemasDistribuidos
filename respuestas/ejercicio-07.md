@@ -16,5 +16,4 @@ El elemento relevante no es la ruta de la API, sino el nombre del servidor: se e
 | No transmite información sobre el servicio | Indica claramente de qué servicio se trata |
 
 Tal como se observó en el Ejercicio 4, el contenedor de inventario puede cambiar de dirección sin que su nombre se modifique. Emplear el nombre lógico permite que `OrdersService` siga funcionando en esa situación. La IP directa, en cambio, crea una dependencia rígida entre el cliente y una ubicación concreta, lo que resulta inconveniente en un sistema donde los servicios se reinician o se multiplican.
-
-Como observación adicional, mientras ambas aplicaciones se ejecutan solo en la máquina local, el nombre `inventory-service` no se resuelve: pertenece a la red de Docker. Su uso correcto se verifica al dockerizar ambos servicios en los ejercicios posteriores.
+ 

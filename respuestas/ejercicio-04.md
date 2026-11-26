@@ -2,7 +2,7 @@
 
 **1. ¿Cambió la IP?**
 
-La dirección puede cambiar, porque al eliminar el contenedor su dirección vuelve al grupo de direcciones disponibles y Docker asigna una al crear el nuevo contenedor. En algunas ejecuciones la dirección se repite, ya que Docker suele reutilizar la que quedó libre. En este caso debe compararse el valor obtenido antes y después con `docker inspect`.
+La dirección puede cambiar, porque al eliminar el contenedor su dirección vuelve al grupo de direcciones disponibles y Docker asigna una al crear el nuevo contenedor. En algunas ejecuciones la dirección se repite, ya que Docker suele reutilizar la que quedó libre. En este caso la dirección no cambió.
 
 **2. ¿Cambió el nombre?**
 

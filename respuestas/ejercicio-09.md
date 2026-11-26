@@ -4,31 +4,6 @@
 
 Se creó un archivo `docker-compose.yml` en la raíz del proyecto que define los dos servicios de la aplicación y la red que los conecta:
 
-```yaml
-services:
-  inventory-service:
-    build: ./InventoryService
-    networks:
-      - ecommerce-network
-
-  orders-service:
-    build: ./OrdersService
-    depends_on:
-      - inventory-service
-    networks:
-      - ecommerce-network
-
-networks:
-  ecommerce-network:
-    driver: bridge
-```
-
-## Explicación de cada parte
-
-- `services`: agrupa los contenedores que forman la aplicación. En este caso, los dos servicios web.
-- `build`: indica la carpeta que contiene el `Dockerfile` de cada servicio, por lo que Compose construye las imágenes a partir del código fuente.
-- `networks`: conecta ambos servicios a la red `ecommerce-network`, declarada al final del archivo con el controlador `bridge`.
-- `depends_on`: expresa que `orders-service` debe iniciarse después de `inventory-service`. Conviene aclarar que esta opción respeta el orden de arranque, pero no garantiza que la API del inventario ya esté lista para responder; por eso puede ser necesario esperar unos segundos antes de probar la llamada.
 
 ## Nombres, direcciones y resolución
 

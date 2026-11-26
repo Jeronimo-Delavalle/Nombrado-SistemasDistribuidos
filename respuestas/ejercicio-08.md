@@ -23,9 +23,6 @@ El resto de las instrucciones se mantiene igual: imágenes base, directorios, re
 
 Se agregó un archivo `.dockerignore` en cada proyecto con `bin`, `obj` y `.git`. Su función es impedir que Docker copie al contenedor los archivos generados por compilaciones locales en Windows. Esto evita que se mezclen archivos compilados para otro entorno y reduce el tamaño de lo que se envía al construir la imagen.
 
-## Ajuste de la versión de .NET
-
-Los proyectos declaran el destino `net9.0`. Las imágenes `8.0` que aparecen en el ejemplo de la consigna no pueden compilar ese destino y producen el error `NETSDK1045`. Por eso los Dockerfiles se ajustaron a `sdk:9.0` y `aspnet:9.0`. El código de las aplicaciones no se modificó.
 
 ## Comandos de verificación
 
