@@ -1,17 +1,17 @@
-# Nombrado en Sistemas Distribuidos — Caso práctico
+# Nombrado en Sistemas Distribuidos â€” Caso prÃ¡ctico
 
-Sistemas Distribuidos – ISI – UTN FRCU
+Sistemas Distribuidos â€“ ISI â€“ UTN FRCU
 
 ## Objetivo
 
-Aplicar los conceptos de nombrado, resolución de nombres y transparencia
-de ubicación en una plataforma de comercio electrónico usando Docker,
+Aplicar los conceptos de nombrado, resoluciÃ³n de nombres y transparencia
+de ubicaciÃ³n en una plataforma de comercio electrÃ³nico usando Docker,
 servicios ASP.NET Core y Docker Compose.
 
 ## Requisitos
 
 - Docker Desktop (modo Linux containers)
-- .NET SDK 8.0
+- .NET SDK 9.0
 - Git
 
 ## Estructura del repositorio
@@ -19,12 +19,4 @@ servicios ASP.NET Core y Docker Compose.
 - `InventoryService/`: Web API que devuelve el stock de un producto.
 - `OrdersService/`: Web API cliente que llama a InventoryService por nombre.
 - `docker-compose.yml`: define ambos servicios y la red `ecommerce-network`.
-- `respuestas/`: contiene las respuestas y conclusiones de cada uno de los ejercicios del caso práctico.
-
-## Cómo ejecutar
-
-```powershell
-cd C:\SD\Nombrado
-docker compose up --build
-docker compose ps
-docker compose logs orders-service
+- `respuestas/`: contiene las respuestas y conclusiones de cada uno de los ejercicios del caso prÃ¡ctico.
