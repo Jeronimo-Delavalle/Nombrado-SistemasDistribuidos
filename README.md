@@ -19,7 +19,7 @@ servicios ASP.NET Core y Docker Compose.
 - `InventoryService/`: Web API que devuelve el stock de un producto.
 - `OrdersService/`: Web API cliente que llama a InventoryService por nombre.
 - `docker-compose.yml`: define ambos servicios y la red `ecommerce-network`.
-
+- `respuestas/`: contiene las respuestas y conclusiones de cada uno de los ejercicios del caso práctico.
 
 ## Cómo ejecutar
 
